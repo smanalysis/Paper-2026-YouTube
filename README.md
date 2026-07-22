@@ -1,13 +1,13 @@
 # Code and Data
 
 ## Experiment System Code
-In `system` directory, We have provided the Java source code (in `src` directory) for our experimental system along with the Maven dependency file (`pom.xml`) for the required libraries. Please note that we utilize the JxBrowser toolkit, which is a commercial package, so we cannot share it directly on GitHub. If you need to run the code, please email us at myong@bnu.edu.cn, and we will provide the necessary JAR files (put in `lib` directory) and license key (replace empty system property in `BrowserPanel.java`).
+
+### `system/`
+We have provided the Java source code (in `src` directory) for our experimental system along with the Maven dependency file (`pom.xml`) for the required libraries. Please note that we utilize the `JxBrowser toolkit`, which is a commercial package, so we cannot share it directly on GitHub. If you need to run the code, please email us at myong@bnu.edu.cn, and we will provide the necessary JAR files (put in `lib` directory) and license key (replace empty system property in `BrowserPanel.java`).
 
 ## Data Files
-This directory contains the data and standalone scripts used to reproduce Figures 2–4, Figures S2–S10, and Table S3. By default, all scripts read only from the local `data/`, `stance_score/`, and `vector_similarity/` directories. Figures are saved to `figures/`.
 
 ### `data/`
-
 - `political-news_data.xlsx`: Step-level exposure data from the political-news experiments.
 - `entertainment_data.xlsx`: Step-level exposure data from the entertainment experiments.
 
@@ -37,7 +37,8 @@ Each JSON object is keyed by video ID. Each record contains `stance_label` (one 
 
 Each JSON object is keyed by video ID, with the corresponding value containing the 1,024-dimensional BGE-M3 semantic vector for that video.
 
-## Python Scripts
+### `plot_code/`
+This directory contains standalone scripts used to reproduce Figures 2–4, Figures S2–S10, and Table S3. By default, all scripts read only from the local `data/`, `stance_score/`, and `vector_similarity/` directories.
 
 | Script | Purpose |
 |---|---|
