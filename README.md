@@ -1,7 +1,10 @@
-# Figure Reproduction Code
+# Code and Data
 
-This directory contains the data and standalone scripts used to reproduce Figures 2–4, Figures S2–S10, and Table S3. By default, all scripts read only from the local `data/`, `stance_score/`, and `vector_similarity/` directories. Figures are saved to `figures/`. 
+## Experiment System Code
+In `system` directory, We have provided the Java source code (in `src` directory) for our experimental system along with the Maven dependency file (`pom.xml`) for the required libraries. Please note that we utilize the JxBrowser toolkit, which is a commercial package, so we cannot share it directly on GitHub. If you need to run the code, please email us at myong@bnu.edu.cn, and we will provide the necessary JAR files (put in `lib` directory) and license key (replace empty system property in `BrowserPanel.java`).
+
 ## Data Files
+This directory contains the data and standalone scripts used to reproduce Figures 2–4, Figures S2–S10, and Table S3. By default, all scripts read only from the local `data/`, `stance_score/`, and `vector_similarity/` directories. Figures are saved to `figures/`.
 
 ### `data/`
 
@@ -48,7 +51,3 @@ Each JSON object is keyed by video ID, with the corresponding value containing t
 | `summarize_tabS3.py` | Summarizes the number of bot-pair records and unique videos exposed to Accounts A and B by experiment and α. |
 
 Plotting scripts save 600-dpi PNG, PDF, and TIFF files. `summarize_tabS3.py` produces `tabS3.csv`.
-
-## Experiment System Code
-
-In `system` directory, We have provided the Java source code (in `src` directory) for our experimental system along with the Maven dependency file (`pom.xml`) for the required libraries. Please note that we utilize the JxBrowser toolkit, which is a commercial package, so we cannot share it directly on GitHub. If you need to run the code, please email us at myong@bnu.edu.cn, and we will provide the necessary JAR files (put in `lib` directory) and license key (replace empty system property in `BrowserPanel.java`).
